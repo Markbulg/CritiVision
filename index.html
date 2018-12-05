@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="util.css">
+  
+</head>
+<body>
+
+  <div>
+		<button class="ui-button" id="start">Start</button>
+		<button class="ui-button" id="stop">Stop</button>
+  </div>
+  
+  <div id="content"></div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  
+    $(function() {
+      $("#content").load("articles/nieuws-1.html",function() {
+        alert("Test");
+      });
+    });
+
+    $("#start").click(function() {
+       $(this).prop('disabled',true);     
+       $("#stop").prop('disabled',false);  	   
+     });	 
+	 
+	 $("#stop").click(function() {
+        $(this).prop('disabled',true);     
+       $("#start").prop('disabled',false);  	        
+     });	
+	 
+	
+  </script>
+
+</body>
+</html>
