@@ -1,2 +1,2 @@
-# CritiVision
+# site
 Markbulg's repository
