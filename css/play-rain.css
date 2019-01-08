@@ -1,0 +1,39 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin     : 0;
+      font-family: Arial;
+    }
+
+	@media only screen and (max-width: 600px) {
+      .panel-bottom-transparent {
+        position  : fixed;
+        bottom    : 0;
+        background: rgba(0, 0, 0, 0);
+        color     : #f1f1f1;
+        width     : 100%;
+        padding   : 8px;
+      }
+    }
+	
+	@media only screen and (min-width: 600px) {
+      .panel-bottom-transparent {
+        position  : fixed;
+        bottom    : 0;
+        background: rgba(0, 0, 0, 0);
+        color     : #f1f1f1;
+        width     : 100%;
+        padding   : 20px;
+      }
+    }
+	
+	#videoId {
+        position  : fixed;
+        right     : 0;
+        bottom    : 0;
+        min-width : 100%;
+		min-height: 100%;
+      }
+ 

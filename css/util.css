@@ -1,0 +1,230 @@
+    .ui-button {
+	  cursor          : pointer;
+	  background-color: #C4C7CE;
+	  font-family     : Helvetica, Arial, sans-serif;
+	  font-weight     : 300;
+	  outline         : none;
+      border-radius   : 5px;
+      box-shadow      : 0px 5px #270606;
+	  padding         : 6px 35px;
+	  font-size       : 22px;
+    }
+	
+	.ui-button:disabled {
+      pointer-events    : none;
+      cursor            : not-allowed;
+ 	  background-color  : #C4C7CE;
+	  color             : #9E9E9E;
+	  outline           : none;
+      box-shadow        : 0px 5px #270606;
+    }
+	
+	.ui-button:active {
+      transform : translateY(4px);
+      box-shadow: 0px 1px #3C93D5;
+    }
+	
+	.ui-button:hover {
+	  color           : #924343;
+	  background-color: #ECF0F1    
+    }
+	
+	.ui-btn-small {
+	  cursor          : pointer;
+	  background-color: #C4C7CE;
+	  font-family     : Helvetica, Arial, sans-serif;
+	  font-weight     : 200;
+	  outline         : none;
+      border-radius   : 3px;
+      box-shadow      : 0px 2px #270606;
+	  padding         : 6px 25px;
+	  font-size       : 14px;
+    }
+	
+   	.ui-btn-small:disabled {
+      pointer-events    : none;
+      cursor            : not-allowed;
+ 	  background-color  : #C4C7CE;
+	  color             : #9E9E9E;
+	  outline           : none;
+      box-shadow        : 0px 5px #270606;
+    }
+	
+	.ui-btn-small:active {
+      transform : translateY(4px);
+      box-shadow: 0px 1px #3C93D5;
+    }
+	
+	.ui-btn-small:hover {
+	  color           : #924343;
+	  background-color: #ECF0F1    
+    }
+
+	.ui-date {
+	  border          : 1px solid #924343;            /* light red */
+ 	  box-sizing      : border-box;
+      width           : 104px;
+      height          : 25px;
+	  padding         : 4px 6px;
+	  text-align      : center;
+	  font            : 14px "Helvetica Neue", Arial, sans-serif;
+	  color           : #666;
+	  background      : #fcfcfc url("images/date-day-bg.png") repeat-x left 18px;
+    }
+	
+	.ui-date-small {
+	  border          : 1px solid #924343;            /* light red */
+ 	  box-sizing      : border-box;
+      width           : 100px;
+      height          : 16px;
+	  padding         : 0px 6px;
+	  text-align      : center;
+	  font            : 13px "Helvetica Neue", Arial, sans-serif;
+	  color           : #666;
+	  background      : #fcfcfc url("images/date-day-bg.png") repeat-x left 18px;
+    }
+	
+    .ui-a:link {
+      color: black;
+	  text-decoration: none;
+    }
+
+    .ui-a:visited {
+      color: green;
+	  text-decoration: none;
+    }
+
+    .ui-a:hover {
+      color: #924343;             /* light red */
+	  text-decoration: none;
+    }
+
+    .ui-a:active {
+      color: #924343;             /* light red */
+	  text-decoration: none;
+    }
+	
+	.panel-top-transparent {
+      position  : fixed;
+      top       : 0;
+      background: rgba(0, 0, 0, 0);
+      color     : #f1f1f1;
+      width     : 100%;
+      padding   : 4px 5px;
+    }
+	
+	.panel-menu-transparent {
+      position  : fixed;
+      top       : 16px;
+      background: rgba(0, 0, 0, 0);
+      color     : #f1f1f1;
+      width     : 100%;
+ 	  }
+	
+.rb-button {
+  float   :left;
+  width   : 50px;
+  height  : 50px;
+  margin  : 0 30px 30px 0;
+  border-radius: 50%;
+  box-shadow   : 0px 4px 6px 0px rgba(0, 0, 0, .3), inset 0px 3px 1px 1px white, inset 0px -2px 1px 1px rgba(204,198,197,.5);			
+			
+  position: relative;
+  background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+  background-image: linear-gradient(top, #f4f1ee, #fff);
+			
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+		
+.rb-button:active {
+  background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+  background-image: linear-gradient(top, #efedec, #f7f4f4);
+  box-shadow      : 0 1px 2px 0 rgba(0,0,0,.4), inset 0px -1px 1px 1px rgba(204,198,197,.5);
+}
+
+.rb-button:active:after {
+  color      : #dbd2d2;
+  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}
+
+.rb-button:after {
+  position: absolute;
+  color   : #b3b3b3;
+  content : "";
+  display : block;
+			
+  font-size: 30px;
+  width    : 25px;
+  height   : 25px;
+			
+  text-decoration: none;
+  text-shadow    : 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+}
+
+.rb-plus:after {
+  content: "+";
+  left   : 17px;
+  top    : 11px;
+}
+		
+.rb-min:after {
+  content: "-";
+  left   : 20px;
+  top    : 8px;
+}
+		
+.rb-button:hover {
+  color           : #0088cc;
+  background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+  background-image: linear-gradient(top, #fff, #f4f1ee);
+}
+
+.rb-tick:hover:after {
+  color      : #83d244;
+  text-shadow: 0px 0px 6px #83d244;
+}
+
+.iframe-section {
+  display: none;
+}
+
+.iframe-section:target {
+  display: block;
+}
+	
+.embed-responsive {
+  position: relative;
+
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+	
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+	
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+	
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+#windowsizeId {
+  color     : white;
+  font-size : 12px;
+}
+	

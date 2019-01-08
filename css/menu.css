@@ -1,0 +1,279 @@
+/* nice menu */	
+nav {
+    text-align      : center;
+    background      : #909eab
+}
+	
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: #efefef; /* zilver */
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding   : 0 20px;
+	border-radius: 7px;  
+	list-style: none;
+	position  : relative;
+	display   : inline-table;
+}
+	nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	nav ul li {
+		float: left;
+	}
+	
+  	nav ul li:hover {
+		background: #ECF0F1; /* wit zilver */
+	/*	background: #4b545f;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);  */
+	}  
+		
+	nav ul li a {
+		display: block; 
+		padding: 10px 40px;
+		color  : black;
+		text-decoration: none;
+	}
+
+	nav ul li:hover a {
+		color: #924343;  /* licht rood */
+	}  
+
+		
+	nav ul ul {
+		border-radius: 0px;
+		padding   : 0;
+		position  : absolute;
+		top       : 100%;
+	}
+	
+	nav ul ul li {
+		float        : none; 
+		border-top   : 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position     : relative;
+	}
+	
+	nav ul ul li:hover {
+		background: #ECF0F1; /* wit zilver */
+	/*	background: #4b545f;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);  */
+	}
+	
+	nav ul ul li a {
+		padding   : 10px 40px;
+		text-align: left;
+	    color     : black;
+	}	
+	
+	nav ul ul li:hover a {
+		color: #924343;  /* licht rood */
+	}
+		
+	nav ul ul ul {
+		position: absolute;
+		left    : 100%;
+		top     : 0;
+	}
+	
+/* example HTML
+
+  <nav>
+	<ul>
+		<li><a href="#">Nieuws</a></li>
+		<li><a href="#">Sociaal</a></li>
+		<li><a href="#">Visie</a></li>
+		<li><a class="mainitem" href="#">Applicaties</a>
+			<ul>
+				<li><a class="dropdownitem" href="#">Timer 1</a></li>
+				<li><a class="dropdownitem" href="#">Timer 2</a></li>
+				<li><a class="dropdownitem" href="#">Rain</a></li>
+			</ul>
+		</li>
+	</ul>
+  </nav>
+*/
+  
+/* responsive menu */	
+     .ui-navpanel {
+	   text-align : left;
+       background : #909eab url(bg.png);
+	   font-size  : 17px;
+    }
+	
+	.ui-nav {
+      overflow    : hidden;
+	  background  : #efefef; /* zilver */
+      background  : linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+      background  : -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+      background  : -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+      box-shadow  : 0px 0px 9px rgba(0,0,0,0.15);
+	
+	  font-family : Arial, Helvetica, sans-serif;
+	  text-align  : center;
+	  padding     : 0px 20px;
+	  width       : 75%;
+	  max-width   : 403px;   /* don't let the length of the navigation bar be too big */
+      margin      : 0 auto;
+    }
+	
+	.ui-navpanel .ui-nav {
+	  background : lightgrey;
+	}
+	
+    .ui-nav a {
+      float          : left;
+      display        : inline-block;
+	  color          : black;
+      padding        : 14px 16px;
+      text-decoration: none;
+	  text-align     : center;
+    }
+
+    .ui-active {
+      background     : #ECF0F1;  /* wit zilver */
+      color          : #924343;  /* licht rood */
+	  font-weight    : bold;
+    }
+
+    .ui-nav .ui-icon {
+      display: none;
+    }
+
+    .ui-dropdown {
+      float   : left;
+      overflow: hidden;
+    }
+
+    .ui-dropdown .ui-dropdownitem {
+      font-size       : 17px;    
+      border          : none;
+      outline         : none;
+      color           : black;
+      padding         : 14px 16px;
+      background-color: inherit;
+      font-family     : inherit;
+      margin          : 0;
+    }
+
+    .ui-dropdown-content {
+      display         : none;
+	  border-bottom   : 1px solid #575f6a;
+      position        : absolute;
+ 	  background-color: lightgrey;
+      min-width       : 160px;
+      box-shadow      : 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index         : 1;
+    }
+
+    .ui-dropdown-content a {
+      float          : none;
+	  border-top     : 1px solid #6b727c;
+      color          : black;
+      padding        : 12px 16px;
+      text-decoration: none;
+      display        : block;
+      text-align     : left;
+    }
+
+    .ui-nav a:hover, .ui-dropdown:hover .ui-dropdownitem {
+ 	  background: #ECF0F1;   /* wit zilver */
+      color     : #924343;   /* licht rood */
+    }
+
+    .ui-dropdown-content a:hover {
+	  background: #ECF0F1;   /* wit zilver */
+      color     : #924343;   /* licht rood */
+    }
+
+    .ui-dropdown:hover .ui-dropdown-content {
+      display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+      .ui-nav a:not(:first-child), .ui-dropdown .ui-dropdownitem {
+         display: none;
+      }
+	  
+      .ui-nav a.ui-icon {
+        float   : right;
+        display : block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+	  .ui-nav {
+	     padding    : 0px 0px;
+	  }
+	  
+      .ui-nav.responsive {
+	     position: relative;
+		 margin-left: 0px;
+	     width      : 40%;
+	  }
+	  
+      .ui-nav.responsive .ui-icon {
+         position   : absolute;
+         right      : 0;
+         top        : 0;
+      }
+	  
+      .ui-nav.responsive a {
+         float      : none;
+         display    : block;
+         text-align : left;
+      }
+	        
+      .ui-nav.responsive .ui-dropdown {
+	     float      : none;
+	  }
+	  
+      .ui-nav.responsive .ui-dropdown-content {
+	     position   : relative;
+	  }
+	  
+      .ui-nav.responsive .ui-dropdown .ui-dropdownitem {
+         display    : block;
+         width      : 100%;
+         text-align : left;
+      }
+    }
+	
+/* example HTML */
+/* <button regel: dit moet button zijn, cursor wordt dan een pijl */
+/*   
+<div class="ui-navpanel">
+  <div class="ui-nav" id="navId">
+    <a href="#home" class="ui-active">Nieuws</a>
+    <a href="#news">Sociaal</a>
+    <a href="#contact">Visie</a>
+    <div class="ui-dropdown">
+      <button class="ui-dropdownitem">Applicaties</button>  
+      <div class="ui-dropdown-content">
+        <a href="#">Timer 1</a>
+        <a href="#">Timer 2</a>
+        <a href="#">Rain</a>
+      </div>
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="ui-icon" onclick="placeMenu()">&#9776;</a>
+  </div>
+  </div>
+*/ 
+	

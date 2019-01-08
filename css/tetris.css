@@ -1,0 +1,34 @@
+body {
+  margin     : 0;
+  font-family: Arial;
+}
+
+.header {
+  padding    : 100px;
+  text-align : center;
+  background : rgb(62, 147, 147);
+  color      : white;
+  font-size  : 26px;
+}
+
+@media only screen and (max-width: 1365px) {
+ #embed-containerId {
+   display: none;
+ }
+	  
+ #page-infoId {
+   display: block;
+ }
+}
+	
+@media only screen and (min-width: 1366px) {
+ #embed-containerId {
+   display: block;
+ }
+	  
+ #page-infoId {
+   display: none;
+ }
+}
+	
+
