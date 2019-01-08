@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+  <link rel="stylesheet" href="css/util.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/play-rain.css">
+  
+</head>
+
+<body>
+    
+  <audio loop id="audioId">
+      <source src="https://raw.githubusercontent.com/Markbulg/files/master/rain_1.mp3" type="audio/mpeg">
+  </audio>
+  
+  <video loop id="videoId">
+	<source src="https://raw.githubusercontent.com/Markbulg/files/master/rain.mp4" type="video/mp4">
+  </video>
+  
+  <div class="panel-top-transparent">
+    <div align="right" id="windowsizeId"><span></span></div> 
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div id="navBarId"></div>
+  
+  <div class="panel-bottom-transparent">
+    <button class="ui-button" id="btnId" onclick="togglePlay()"></button>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/playrain.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/menu.js"></script>
+
+</body>
+</html>
