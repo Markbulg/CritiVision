@@ -15,7 +15,6 @@ $(function() {
   
   // Set menu
   $("#navBarId").load("menu.html", function() {
-	alert("Hier. . .");
 	var activeItem, navBar;
 	
     navBar = document.getElementById('navBarId');
