@@ -2,7 +2,6 @@ nieuwsNS = {};
 nieuwsNS.arr  = [];
 
 $(function() {
-  alert("Hier. . .");
   var activeItem, navBar;
   navBar = document.getElementById('navBarId');
 	  
