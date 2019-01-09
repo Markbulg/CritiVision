@@ -62,25 +62,6 @@ body {
   height   : auto;
 }
 	
-.footer {
-  display: flex;
-  align-items: center;
-  overflow: auto;
-	  
-  border-left  : 3px solid #256F9C;
-  border-right : 3px solid #256F9C;
-  border-bottom: 3px solid #256F9C;
-	  
-  background : #909eab;
-  font-size  : 15px;
-  color      : white;
-}
-
-.footer div {
-  align: left;
-  padding-right: 5px;
-}
-
 .table-right {
   width: 100%;
   
