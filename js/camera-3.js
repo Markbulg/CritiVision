@@ -1,9 +1,10 @@
-var video = document.querySelector('#webcam');
+var video = document.qetElementById('webcamId');
 
-function webcam(btn) {
-   if(btn == 'pause') {
+function webcam(p_btn) {
+   if (p_btn == 'pause') {
      video.pause();
-   } else {
+   }
+   else {
      video.play();
    }
 }
